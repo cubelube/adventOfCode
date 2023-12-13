@@ -6,7 +6,6 @@
 int main() {
     std::ifstream ReadFile("input.txt");
     std::string fileInput;
-    bool hasVisited;
     int x = 0;
     int y = 0;
     std::vector<std::string> visits;
