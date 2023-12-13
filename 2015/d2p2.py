@@ -1,3 +1,5 @@
+# https://adventofcode.com/2015/day/2
+
 allribbon = 0
 for line in open('part1input.txt'):
     length, width, height = line.split('x')
