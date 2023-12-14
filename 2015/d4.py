@@ -8,6 +8,6 @@ def gethex(input):
 for line in open('example.txt'):
     for i in range(10000000):
         hexmd5 = gethex(line + str(i))
-        if hexmd5[:5] == '00000':
+        if hexmd5[:5] == '00000': # for part 2, simply change this line to "if hexmd[:6] == '000000':"
             print(i)
             break
