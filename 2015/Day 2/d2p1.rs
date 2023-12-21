@@ -10,12 +10,9 @@ fn main() {
             for line in lines {
                 if let Ok(ip) = line {
 
-                    let length = ip.split('x').nth(0).unwrap();
-                    let length: i32 = length.parse().unwrap();
-                    let width = ip.split('x').nth(1).unwrap();
-                    let width: i32 = width.parse().unwrap();
-                    let height = ip.split('x').nth(2).unwrap();
-                    let height: i32 = height.parse().unwrap();
+                    let length: i32 = ip.split('x').nth(0).expect("REASON").parse().unwrap();
+                    let width: i32 = ip.split('x').nth(1).expect("REASON").parse().unwrap();
+                    let height: i32 = ip.split('x').nth(2).expect("REASON").parse().unwrap();
                     
                     let area = (2 * length * width) + (2 * width * height) + (2 * length * height);
                     let extrapaper = cmp::min(length * width, width * height);
