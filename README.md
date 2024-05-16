@@ -1,2 +1,2 @@
 # adventOfCode
-my AOC solves, written in C++ or Rust (or Python if I'm feeling lazy)
+my AOC solves, written in C++, Rust, or Haskell (or Python if I'm feeling lazy)
